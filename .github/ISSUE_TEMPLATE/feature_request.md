@@ -7,14 +7,18 @@ assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## Description of feature
+A clear and concise description of the improvement required.
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+## Steps
+- [ ] Assign people.
+- [ ] Create a feature branch and switch to it.
+- [ ] Implement changes locally and commit them.
+- [ ] Push the branch up to remote.
+- [ ] Create Pull Request, target main from the branch.
+- [ ] Merge after the reviewer signs off on the change.
+- [ ] Cleanup (e.g. delete remote branch).
+- [ ] Update and close issue.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+## Solution proposed
+A clear and concise description of the desired solution.
