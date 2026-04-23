@@ -35,10 +35,9 @@ def generate(f, starters, contexts):
 		
 		char_count += (1 + len(str(word)))
 		
-		match char_count:
-			case 80:
-				f.write("\n")
-				char_count = 0
+		if (char_count > 80):
+			f.write("\n")
+			char_count = 0
 			
 		context = context[1:] + [word]
 	f.write("\n")
