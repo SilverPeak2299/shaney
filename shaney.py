@@ -31,14 +31,15 @@ def generate(f, starters, contexts):
 		if not wordfreq:
 				break
 		word = choose(wordfreq)
-		f.write(" " + word)
+
+		f.write(f" {word}")
 		
 		char_count += (1 + len(str(word)))
 		
 		if (char_count > 80):
 			f.write("\n")
 			char_count = 0
-			
+      
 		context = context[1:] + [word]
 	f.write("\n")
 
