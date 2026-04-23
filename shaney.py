@@ -66,7 +66,7 @@ def main():
 
 	for filename in sorted(os.listdir(data_dir)):
 		print("Reading " + data_dir + filename)
-		f = open(data_dir + filename, encoding="utf-8")
+		f = open(data_dir + filename, encoding="utf-8", errors="ignore")
 		words = f.read().split()
 		starters.append(words[:2])
 		build(contexts, words, 2)
