@@ -23,6 +23,8 @@ def build(contexts, words, n):
 def generate(f, starters, contexts):
 	context = random.choice(starters)
 	f.write(" ".join(context))
+	
+	char_count :int = 0
 	while True:
 		key = tuple(context)
 		wordfreq = contexts.get(key, {})
@@ -30,6 +32,14 @@ def generate(f, starters, contexts):
 				break
 		word = choose(wordfreq)
 		f.write(" " + word)
+		
+		char_count += (1 + len(str(word)))
+		
+		match char_count:
+			case 80:
+				f.write("\n")
+				char_count = 0
+			
 		context = context[1:] + [word]
 	f.write("\n")
 
