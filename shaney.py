@@ -29,7 +29,7 @@ def generate(f, starters, contexts):
 		if not wordfreq:
 				break
 		word = choose(wordfreq)
-		f.write(" " + word)
+		f.write(f" {word}")
 		context = context[1:] + [word]
 	f.write("\n")
 
