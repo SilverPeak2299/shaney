@@ -1,5 +1,5 @@
 #!/usr/bin/python 
-import os, sys, random
+import os, sys, string, random
 
 # Markov chain word generator.
 
