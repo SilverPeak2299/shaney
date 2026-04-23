@@ -29,7 +29,7 @@ def generate(f, starters, contexts):
 		if not wordfreq:
 				break
 		word = choose(wordfreq)
-		f.write(" " + word)
+		f.write(f" {word}")
 		context = context[1:] + [word]
 	f.write("\n")
 
@@ -66,7 +66,7 @@ def main():
 
 	for filename in sorted(os.listdir(data_dir)):
 		print("Reading " + data_dir + filename)
-		f = open(data_dir + filename, encoding="utf-8", errors="ignore")
+		f = open(data_dir + filename)
 		words = f.read().split()
 		starters.append(words[:2])
 		build(contexts, words, 2)
